@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TOURvex — Travel Agency Template</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow+Semi+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body>
+    <div class="loader-wrap">
+        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+        </svg>
+        <div class="loader-wrap-heading">
+            <div class="load-text"> <span>جاري</span><span>&nbsp;</span><span>التحميل</span> </div>
+        </div>
+    </div>
+    <div class="cursor"></div>
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <div id="smooth-wrapper">
+       <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="logo-wrapper">
+                    <a class="logo" href="index.html"><img src="assets/img/discover-logo.png" class="logo-img" alt=""></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="ti-menu"></i></span> </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><span class="rolling-text">الرئيسية</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="index.html" class="dropdown-item active"><span>التصميم الرئيسي 1</span></a></li>
+                                <li><a href="index2.html" class="dropdown-item"><span>التصميم الرئيسي 2</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html"><span class="rolling-text">من نحن</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="tours.html"><span class="rolling-text">الرحلات</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="destination.html"><span class="rolling-text">الوجهات</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html"><span class="rolling-text">الخدمات</span></a></li>
+                        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false"><span class="rolling-text">الصفحات</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="team.html" class="dropdown-item"><span>فريق العمل</span></a></li>
+                                <li><a href="team-details.html" class="dropdown-item"><span>تفاصيل الفريق</span></a></li>
+                                <li><a href="testimonials.html" class="dropdown-item"><span>آراء العملاء</span></a></li>
+                                <li><a href="faq.html" class="dropdown-item"><span>الأسئلة الشائعة</span></a></li>
+                                <li><a href="tour-details.html" class="dropdown-item"><span>تفاصيل الرحلة</span></a></li>
+                                <li><a href="service-details.html" class="dropdown-item"><span>تفاصيل الخدمة</span></a></li>
+                                <li><a href="post.html" class="dropdown-item"><span>صفحة المقال</span></a></li>
+                                <li><a href="404.html" class="dropdown-item"><span>صفحة 404</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html"><span class="rolling-text">المدونة</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html"><span class="rolling-text">اتصل بنا</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="smooth-content">
+            <main class="o-hidden">
+                <!-- Header -->
+                <header class="full-height valign">
+                    <div class="background bg-img" data-background="assets/img/hero/pattern-bg.png"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 offset-lg-1 valign">
+                                <div class="cont">
+                                    <h6>وكالة تورفيكس</h6>
+                                    <h2 class="text-white"><span>اكتشف العالم <i>مع دليلنا السياحي.</i></span></h2>
+                                    <p>حوّل وجهات أحلامك إلى حقيقة واقعية من خلال توجيهات خبرائنا. نصنع لك تجارب فريدة من نوعها خصيصاً لك.</p>
+                                    <a href="tours.html" class="butn-arrow2"> <span class="btn-text">عرض الرحلات</span> <span class="arrow-wrap"><span class="arrow-inner"><i class="ti-arrow-right"></i><i class="ti-arrow-right"></i></span> </span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="flex main-marq">
+                                    <div class="slide-vertical st1 mr-20">
+                                        <div class="box">
+                                            <div class="img"> <img src="assets/img/02 (2).jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/03 (1).jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/03 (2).jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/a.jpg" alt=""> </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="img"> <img src="assets/img/c.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/e.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/f.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/a1.jpg" alt=""> </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-vertical st2">
+                                        <div class="box">
+                                            <div class="img"> <img src="assets/img/a2.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/a3.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/a4.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/1.jpg" alt=""> </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="img"> <img src="assets/img/2.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/3.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/4.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/01 (1).jpg" alt=""> </div>
+                                        </div>
+                                    </div>
+                                    <div class="slide-vertical st3 ml-20">
+                                        <div class="box">
+                                            <div class="img"> <img src="assets/img/01 (2).jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/02 (1).jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/02 (2).jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/03 (1).jpg" alt=""> </div>
+                                        </div>
+                                        <div class="box">
+                                            <div class="img"> <img src="assets/img/03 (2).jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/a.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/c.jpg" alt=""> </div>
+                                            <div class="img"> <img src="assets/img/e.jpg" alt=""> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="star1"> <img src="assets/img/hero/star2.png" alt=""> </div>
+                    <div class="star2 duru-slide-right"><img src="assets/img/hero/flight-down.png" alt=""></div>
+                    <div class="star3"><img src="assets/img/hero/flight-up.png" alt=""> </div>
+                    <div class="star4 duru-rotate-on-scroll"> <img src="assets/img/hero/bg-compass.png" alt=""></div>
+                </header>
+                <!-- About -->
+                <div class="about2 section-padding bg-white" data-background="assets/img/bg.png">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 offset-md-1">
+                                <div class="about2-img">
+                                    <div class="main-img img-cover duru-slide-down"> <img src="assets/img/f.jpg" alt=""> </div>
+                                    <div class="main-img img-cover duru-slide-up "> <img src="assets/img/a1.jpg" alt=""> </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="section-subtitle wow fadeInRight">سفريات تورفيكس</div>
+                                <div class="section-title d-rotate wow"><span class="rotate-text">اكتشف العالم <i>مع دليلنا</i></span></div>
+                                <p class="wow fadeInRight" data-wow-delay=".3s">اكتشف العالم براحة تامة وتجارب لا تُنسى. دعنا نكون دليلك في مغامرتك القادمة!</p>
+                                <ul class="listo mb-30">
+                                    <li class="wow fadeInUp" data-wow-delay=".1s"> <i class="fa-pro fa-light fa-earth-americas"></i> وجهات عالمية </li>
+                                    <li class="wow fadeInUp" data-wow-delay=".2s"> <i class="fa-pro fa-light fa-route"></i> إرشاد الخبراء </li>
+                                    <li class="wow fadeInUp" data-wow-delay=".3s"> <i class="fa-pro fa-light fa-shield-heart"></i> رحلات آمنة </li>
+                                    <li class="wow fadeInUp" data-wow-delay=".4s"> <i class="fa-pro fa-light fa-hotel"></i> إقامات فاخرة </li>
+                                </ul>
+                                <div class="customers d-flex align-items-center">
+                                    <div class="c-img d-flex align-items-center wow fadeInUp" data-wow-delay=".8s">
+                                        <ul class="d-flex duru-mask-reveal-horizontal">
+                                            <li><img src="assets/img/tst2.jpg" alt=""></li>
+                                            <li><img src="assets/img/tst3.jpg" alt=""></li>
+                                            <li><img src="assets/img/tst1.jpg" alt=""></li>
+                                        </ul>
+                                        <div class="c-text headline pera-content">
+                                            <h3><b class="counter">9,500</b>+</h3> <span>تقييمات إيجابية</span>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="butn-arrow wow fadeInUp" data-wow-delay=".8s"> <span class="btn-text">اقرأ المزيد</span> <span class="arrow-wrap">
+                                            <span class="arrow-inner">
+                                                <i class="ti-arrow-right"></i>
+                                                <i class="ti-arrow-right"></i>
+                                            </span> </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-text-style duru-slide-right" style="color: rgba(0, 0, 0, 0.03) !important; right: 0; text-align: right;">Discover</div>
+</div>
+                <!-- Tours -->
+                <section class="tours stsec section-padding">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-4 offset-lg-1">
+                                <div class="stack-title mb-30">
+                                    <div class="section-subtitle wow fadeInRight">اختر مكانك مفضّل</div>
+                                    <div class="section-title d-rotate wow"><span class="rotate-text">اكتشف وجهات <i>الأحلام</i></span></div>
+                                    <p class="wow fadeInRight" data-wow-delay=".3s">حوّل وجهات أحلامك إلى تجارب لا تُنسى بتوجيهاتنا. من الجواهر المخفية إلى المعالم الشهيرة، نصنع لك رحلات مخصصة تلبي تطلعاتك.</p>
+                                    <a href="#" class="butn-arrow wow fadeInUp" data-wow-delay=".8s"> <span class="btn-text">اقرأ المزيد</span> <span class="arrow-wrap">
+                                            <span class="arrow-inner">
+                                                <i class="ti-arrow-right"></i>
+                                                <i class="ti-arrow-right"></i>
+                                            </span> </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7 items">
+                                <div class="item">
+                                    <div class="tour-media"> <img src="assets/img/06.jpg" alt="" class="height2" data-speed="0.8" data-lag="0">
+                                        <div class="clicko"><a href="tour-details.html"><span class="icon-wrap"><span class="icon"><i class="ti-arrow-top-right"></i></span></span></a></div>
+                                    </div>
+                                    <div class="tour-content">
+                                        <div class="tour-header">
+                                            <div class="tour-location"> <i class="ti-location-pin"></i> <span>جزر المالديف، آسيا</span> </div>
+                                            <h4 class="tour-title">هروب إلى جنة المالديف</h4>
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="tour-duration">
+                                                <div class="tour-icon"> <i class="fa-light fa-calendar"></i> </div>
+                                                <div class="tour-meta"> <small>المدة</small> <span>6 أيام - 5 ليالٍ</span> </div>
+                                            </div>
+                                        </div>
+                                        <div class="tour-price-wrap">
+                                            <div class="tour-rating"> <i class="fa-solid fa-star"></i> 4.9 </div>
+                                            <div class="tour-price"> $499 <span>/ للمسافر</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tour-media"> <img src="assets/img/01.jpg" alt="" class="height2" data-speed="0.8" data-lag="0">
+                                        <div class="clicko"><a href="tour-details.html"><span class="icon-wrap"><span class="icon"><i class="ti-arrow-top-right"></i></span></span></a></div>
+                                    </div>
+                                    <div class="tour-content">
+                                        <div class="tour-header">
+                                            <div class="tour-location"> <i class="ti-location-pin"></i> <span>دبي، الإمارات العربية المتحدة</span> </div>
+                                            <h4 class="tour-title">رحلة دبي الفاخرة</h4>
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="tour-duration">
+                                                <div class="tour-icon"> <i class="fa-light fa-calendar"></i> </div>
+                                                <div class="tour-meta"> <small>المدة</small> <span>5 أيام - 4 ليالٍ</span> </div>
+                                            </div>
+                                        </div>
+                                        <div class="tour-price-wrap">
+                                            <div class="tour-rating"> <i class="fa-solid fa-star"></i> 4.8 </div>
+                                            <div class="tour-price"> $699 <span>/ للمسافر</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="tour-media"> <img src="assets/img/02.jpg" alt="" class="height2" data-speed="0.8" data-lag="0">
+                                        <div class="clicko"><a href="tour-details.html"><span class="icon-wrap"><span class="icon"><i class="ti-arrow-top-right"></i></span></span></a></div>
+                                    </div>
+                                    <div class="tour-content">
+                                        <div class="tour-header">
+                                            <div class="tour-location"> <i class="ti-location-pin"></i> <span>بانف، كندا</span> </div>
+                                            <h4 class="tour-title">جولة في طبيعة كندا الساحرة</h4>
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="tour-duration">
+                                                <div class="tour-icon"> <i class="fa-light fa-calendar"></i> </div>
+                                                <div class="tour-meta"> <small>المدة</small> <span>7 أيام - 6 ليالٍ</span> </div>
+                                            </div>
+                                        </div>
+                                        <div class="tour-price-wrap">
+                                            <div class="tour-rating"> <i class="fa-solid fa-star"></i> 4.9 </div>
+                                            <div class="tour-price"> $799 <span>/ للمسافر</span> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Services -->
+                <section class="services pt-120">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-12 text-center">
+                                <div class="section-title d-rotate wow"><span class="rotate-text text-white">استعد لاستكشاف واكتشاف عالمك الرائع.</span></div>
+                            </div>
+                            <div class="col-md-12 mb-30 text-center">
+                                <a href="#" data-scroll-nav="4" class="hover-this circle-button-overlay">
+                                    <div class="circle-button in-bord hover-anim">
+                                        <div class="rotate-circle">
+                                            <svg class="textcircle safari-fix" viewBox="0 0 500 500">
+                                                <defs>
+                                                    <path id="textcircle" d="M250,400 a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z"></path>
+                                                </defs>
+                                                <text dir="rtl" text-anchor="middle">
+                                                    <textPath xlink:href="#textcircle" startOffset="50%">المسارات الثقافية • ملاذ الطبيعة • </textPath>
+                                                </text>
+                                            </svg>
+                                        </div>
+                                        <div class="in-circle text-center"><i class="fa-thin fa-arrow-down"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="item mb-25 duru-slide-right"> <a href="service-details.html"><span class="arrow fa-thin fa-arrow-up-right"></span></a>
+                                    <div class="icon"><i class="fa-thin fa-earth-americas"></i></div>
+                                    <h5>أماكن مخفية</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="item mb-25 duru-slide-right"> <a href="service-details.html"><span class="arrow fa-thin fa-arrow-up-right"></span></a>
+                                    <div class="icon"><i class="fa-thin fa-plane"></i></div>
+                                    <h5>مغامرات السفر</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="item mb-25 duru-slide-left"> <a href="service-details.html"><span class="arrow fa-thin fa-arrow-up-right"></span></a>
+                                    <div class="icon"><i class="fa-thin fa-mountain-sun"></i></div>
+                                    <h5>ثقافة الطبيعة</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="item mb-25 duru-slide-left"> <a href="service-details.html"><span class="arrow fa-thin fa-arrow-up-right"></span></a>
+                                    <div class="icon"><i class="fa-thin fa-camera-retro"></i></div>
+                                    <h5>قصص السفر</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="height1">
+                            <div class="radius-mask">
+                                <div class="bg-img height2" data-background="assets/img/03.jpg" data-speed="0.8" data-lag="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Scrolling -->
+                <div class="scrolling scrolling-ticker" data-scroll-index="4">
+                    <div class="wrapper feather-shadow2">
+                        <div class="content"> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>حجز طيران</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>حجوزات الفنادق</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>باقات العطلات</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>تسهيل التأشيرات</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>الانتقالات من المطار</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>تأمين السفر</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>الرحلات البحرية</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>جولات المدينة</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>رحلات المغامرة</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>باقات شهر العسل</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>السفر الجماعي</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>سفر الأعمال</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>تأجير السيارات</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>مسارات مخصصة</span> 
+                        </div>
+                        <div class="content"> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>حجز طيران</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>حجوزات الفنادق</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>باقات العطلات</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>تسهيل التأشيرات</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>الانتقالات من المطار</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>تأمين السفر</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>الرحلات البحرية</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>جولات المدينة</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>رحلات المغامرة</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>باقات شهر العسل</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>السفر الجماعي</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>سفر الأعمال</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>تأجير السيارات</span> 
+                            <span><i class="fa-regular fa-asterisk mr-30"></i>مسارات مخصصة</span> 
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonials -->
+                <div class="position-relative section-padding pt-0">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center mb-30">
+                                <div class="section-subtitle wow fadeInRight">آراء العملاء</div>
+                                <div class="section-title d-rotate wow"><span class="rotate-text">مسافرونا <i>السعداء</i></span></div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center g-0">
+                            <div class="col-12 testimonials2">
+                                <div class="item box-shadow-extra-large active">
+                                    <div class="img duru-image-parallax"> <img src="assets/img/a2.jpg" class="img-fluid" alt=""> </div>
+                                    <div class="flex-column cont">
+                                        <div class="cont-hover">
+                                            <h6>جولة أفريقيا</h6>
+                                            <div class="rating"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> </div>
+                                            <p>كانت هذه الجولة تجربة لا تُنسى حقاً. طبيعة أفريقيا والذكريات المشتركة كانت مذهلة.</p>
+                                            <div class="traveller">
+                                                <ul>
+                                                    <li><img src="assets/img/tst2.jpg" alt=""></li>
+                                                    <li><img src="assets/img/tst3.jpg" alt=""></li>
+                                                    <li><img src="assets/img/tst1.jpg" alt=""><span>3+</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item box-shadow-extra-large duru-slide-right">
+                                    <div class="img duru-image-parallax"> <img src="assets/img/a3.jpg" class="img-fluid" alt=""> </div>
+                                    <div class="flex-column cont">
+                                        <div class="cont-hover">
+                                            <h6>جولة كندا</h6>
+                                            <div class="rating"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> </div>
+                                            <p>لقد كانت هذه الرحلة تجربة رائعة. المناظر الطبيعية في كندا واللحظات التي شاركناها كانت لا تصدق.</p>
+                                            <div class="traveller">
+                                                <ul>
+                                                    <li><img src="assets/img/tst2.jpg" alt=""></li>
+                                                    <li><img src="assets/img/tst3.jpg" alt=""></li>
+                                                    <li><img src="assets/img/tst1.jpg" alt=""><span>3+</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item box-shadow-extra-large duru-slide-right">
+                                    <div class="img duru-image-parallax"> <img src="assets/img/a4.jpg" class="img-fluid" alt=""> </div>
+                                    <div class="flex-column cont">
+                                        <div class="cont-hover">
+                                            <h6>جولة كبادوكيا</h6>
+                                            <div class="rating"> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> </div>
+                                            <p>كانت هذه الجولة تجربة فريدة من نوعها. مناظر كبادوكيا واللحظات المشتركة كانت ساحرة.</p>
+                                            <div class="traveller">
+                                                <ul>
+                                                    <li><img src="assets/img/tst2.jpg" alt=""></li>
+                                                    <li><img src="assets/img/tst3.jpg" alt=""></li>
+                                                    <li><img src="assets/img/tst1.jpg" alt=""><span>3+</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQS -->
+                <section class="faqs section-padding bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="item-img"><img src="assets/img/1.jpg" class="duru-image-zoom" alt=""></div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="item-img mt-120"><img src="assets/img/2.jpg" class="duru-image-zoom" alt=""></div>
+                            </div>
+                            <div class="col-lg-5 offset-lg-1 col-md-12 mb-30">
+                                <div class="section-subtitle wow fadeInRight">الأسئلة الشائعة</div>
+                                <div class="section-title mb-25 d-rotate wow"><span class="rotate-text">الأسئلة الأكثر <i>تكراراً</i></span></div>
+                                <ul class="accordion-box clearfix">
+                                    <li class="accordion block">
+                                        <div class="acc-btn">تصوير السفر</div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <p>التقط لحظات سفر جميلة ولا تُنسى أثناء استكشاف أماكن جديدة ووجهات مثيرة حول العالم.</p> <i class="fa-thin fa-camera-retro"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="accordion block">
+                                        <div class="acc-btn">الجولات الجبلية</div>
+                                        <div class="acc-content">
+                                            <div class="content">
+                                                <p>اكتشف المناظر الطبيعية الجبلية الخلابة واستمتع بالمغامرات مع مرشدي السفر المحترفين لدينا.</p> <i class="fa-thin fa-mountain-sun"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="accordion block active-block">
+                                        <div class="acc-btn active">حجز الطيران</div>
+                                        <div class="acc-content" style="display: block;">
+                                            <div class="content">
+                                                <p>احجز رحلاتك الجوية بسرعة وسهولة مع أفضل خيارات السفر والرحلات المريحة لكل وجهة.</p> <i class="fa-thin fa-plane"></i>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Blog -->
+                <section class="blog-home section-padding">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-12 text-center">
+                                <div class="section-subtitle wow fadeInRight">مدونة السفر</div>
+                                <div class="section-title mb-30 d-rotate wow">
+                                <span class="rotate-text">تجارب <i>السفر</i></span> </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 duru-slide-right">
+                                <div class="item bg-img" data-background="assets/img/3.jpg">
+                                    <div class="content">
+                                        <div class="info">
+                                            <a href="blog.html"> <span>28 ديسمبر 2026 <i class="ti-time"></i></span> </a>
+                                        </div>
+                                        <a href="post.html">
+                                            <h5>استكشاف جنة جزر المالديف المخفية</h5>
+                                        </a>
+                                        <p>اكتشف عالماً تلتقي فيه المياه الفيروزية بالرمال البيضاء اللامتناهية في قلب المحيط الهندي.</p>
+                                        <div class="arrow"> <a href="post.html"><i class="ti-arrow-top-right"></i></a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 duru-slide-up">
+                                <div class="item bg-img active" data-background="assets/img/4.jpg">
+                                    <div class="content">
+                                        <div class="info">
+                                            <a href="blog.html"> <span>26 ديسمبر 2026 <i class="ti-time"></i></span> </a>
+                                        </div>
+                                        <a href="post.html">
+                                            <h5>رحلة عبر جمال كندا البري الساحر</h5>
+                                        </a>
+                                        <p>اكتشف مساحات شاسعة من الجبال الشاهقة، البحيرات الكريستالية النقية، والغابات اللامتناهية في كندا.</p>
+                                        <div class="arrow"> <a href="post.html"><i class="ti-arrow-top-right"></i></a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 duru-slide-left">
+                                <div class="item bg-img" data-background="assets/img/01 (1).jpg">
+                                    <div class="content">
+                                        <div class="info">
+                                            <a href="blog.html"> <span>24 ديسمبر 2026 <i class="ti-time"></i></span> </a>
+                                        </div>
+                                        <a href="post.html">
+                                            <h5>عش تجربة الفخامة في دبي الحديثة</h5>
+                                        </a>
+                                        <p>اكتشف مدينة تلتقي فيها ناطحات السحاب المستقبلية بالصحاري الذهبية، وتمزج بين الفخامة والابتكار.</p>
+                                        <div class="arrow"> <a href="post.html"><i class="ti-arrow-top-right"></i></a> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 mb-45 text-center">
+                            <div class="subscribe">
+                                <div class="section-subtitle wow fadeInRight">اشترك لتصلك مستجدات السفر</div>
+                                <div class="section-title d-rotate wow mb-30"><span class="rotate-text text-white">العروض إلى بريدك<i>!</i></span></div>
+                                <div class="newsletter">
+                                    <form action="#">
+                                        <input type="email" placeholder="أدخل عنوان بريدك الإلكتروني" required>
+                                        <button type="submit"><i class="fa-light fa-arrow-right"></i></button>
+                                    </form>
+                                </div>
+                                <p>نحن ملتزمون بحماية <a href="#0" class="text-decoration-line-bottom">سياسة الخصوصية الخاصة بك.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Bottom -->
+                <div class="bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12">
+                                <p>&copy; جميع الحقوق محفوظة لـ <a href="https://1.envato.market/7ZzYQ" target="_blank">DuruThemes</a></p>
+                            </div>
+                            <div class="col-lg-7 col-md-12 text-center">
+                                <div class="links">
+                                    <ul>
+                                        <li><a href="index.html">الرئيسية</a></li>
+                                        <li><a href="tours.html">الرحلات</a></li>
+                                        <li><a href="destination.html">الوجهات</a></li>
+                                        <li><a href="blog.html">المدونة</a></li>
+                                        <li><a href="contact.html">اتصل بنا</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-12">
+                                <div class="social-icons text-end">
+                                    <ul class="list-inline">
+                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
+                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-3.4.0.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/smoother-script.js"></script>
+    <script src="assets/js/springer.min.js"></script>
+    <script src="assets/js/lenis.min.js"></script>
+    <script src="assets/js/three.min.js"></script>
+    <script src="assets/js/hover-effect.umd.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

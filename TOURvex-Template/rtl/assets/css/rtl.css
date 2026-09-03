@@ -1,0 +1,671 @@
+/* ======= Navbar  ======= */
+html[dir="rtl"] body {
+    direction: rtl;
+    text-align: right;
+}
+html[dir="rtl"] .logo-wrapper {
+    float: right;
+}
+html[dir="rtl"] .navbar .navbar-nav .nav-link {
+    font-size: 18px;
+    letter-spacing: 0;
+}
+html[dir="rtl"] .dropdown .nav-link i {
+    padding-left: 0;
+    padding-right: 5px;
+}
+html[dir="rtl"] .navbar .dropdown-menu {
+    text-align: right;
+}
+html[dir="rtl"] .navbar .dropdown-menu .dropdown-item i {
+    float: left;
+    transform: scaleX(-1);
+}
+html[dir="rtl"] .navbar .dropdown-menu li:hover {
+    padding-left: 0;
+    padding-right: 5px;
+}
+@media screen and (min-width: 992px) {
+    html[dir="rtl"] .navbar .dropdown-menu .dropdown-menu {
+        right: calc(100% + 5px);
+        left: auto;
+    }
+}
+@media screen and (max-width: 991px) {
+    html[dir="rtl"] .logo-wrapper {
+        float: right;
+    }
+    html[dir="rtl"] .nav-scroll .logo-wrapper {
+        float: right;
+    }
+    html[dir="rtl"] .navbar .logo {
+        text-align: right;
+    }
+    html[dir="rtl"] .navbar button {
+        margin-left: 0;
+        margin-right: auto;
+    }
+    html[dir="rtl"] .navbar .navbar-collapse {
+        text-align: right;
+    }
+    html[dir="rtl"] .navbar .dropdown-menu .dropdown-item {
+        padding: 0 15px;
+    }
+    html[dir="rtl"] .navbar .dropdown-submenu .dropdown-toggle::after {
+        left: 15px;
+        right: auto;
+    }
+    html[dir="rtl"] .navbar .dropdown-submenu .dropdown-menu {
+        padding: 0 20px 0 0;
+    }
+}
+html[dir="rtl"] .section-title i {
+    padding-left: 4px;
+    padding-right: 2px;
+}
+
+/* ======= Header & Vertical Slider  ======= */
+html[dir="rtl"] header h2 {
+    font-size: 70px;
+    margin-bottom: 30px;
+    letter-spacing: 0px;
+}
+html[dir="rtl"] header h2 i {
+    font-style: normal;
+    font-size: 70px;
+        font-weight: var(--fw-medium);
+}
+html[dir="rtl"] .ml-20 {
+    margin-left: 0 !important;
+    margin-right: 20px !important;
+}
+html[dir="rtl"] .mr-20 {
+    margin-right: 0 !important;
+    margin-left: 20px !important;
+}
+html[dir="rtl"] .butn-arrow2,
+html[dir="rtl"] .butn-arrow {
+    padding: 0 25px 0 10px;
+}
+html[dir="rtl"] .butn-arrow .arrow-wrap,
+html[dir="rtl"] .butn-arrow2 .arrow-wrap {
+    transform: scaleX(-1);
+    display: inline-block;
+}
+html[dir="rtl"] header .star1 {
+    left: auto;
+    right: 10%;
+}
+html[dir="rtl"] header .star2 {
+    right: auto;
+    left: -40px;
+}
+html[dir="rtl"] header .star2 img {
+    transform: scaleX(-1);
+}
+html[dir="rtl"] header .star3 {
+    left: auto;
+    right: 40%;
+}
+html[dir="rtl"] header .star3 img {
+    transform: scaleX(-1);
+}
+html[dir="rtl"] header .star4 {
+    left: auto;
+    right: 45%;
+}
+
+/* ======= About  ======= */
+html[dir="rtl"] .about2 {
+    text-align: right;
+}
+html[dir="rtl"] .about2 .listo {
+    padding-left: 0;
+    padding-right: 0;
+}
+html[dir="rtl"] .c-img ul {
+    padding-left: 0;
+    padding-right: 0;
+}
+html[dir="rtl"] .c-img ul li:not(:first-child) {
+    margin-right: -15px;
+    margin-left: 0;
+}
+html[dir="rtl"] .c-text {
+    margin-right: 15px;
+    margin-left: 0;
+}
+html[dir="rtl"] .ti-arrow-right {
+    transform: rotate(180deg);
+    display: inline-block;
+}
+html[dir="rtl"] .duru-slide-right {
+    animation-name: duru-slide-left;
+}
+html[dir="rtl"] .bg-text-style {
+    right: auto;
+    left: 0px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    html[dir="rtl"] header h2,
+    html[dir="rtl"] header h2 i {
+        font-size: 48px;
+    }
+}
+
+/* ======= Tours  ======= */
+html[dir="rtl"] .tours {
+    text-align: right;
+}
+html[dir="rtl"] .tours .item .tour-price-wrap {
+    align-items: flex-start;
+}
+html[dir="rtl"] .tours .item .clicko {
+    right: auto;
+    left: 20px;
+}
+html[dir="rtl"] .ti-arrow-top-right {
+    transform: rotate(-90deg);
+    display: inline-block;
+}
+html[dir="rtl"] .tours .item .clicko .icon-wrap::before {
+    content: "\e65b"; 
+    right: auto;
+    left: 0;
+    transform: scale(0.26) translate(52px, 50px);
+}
+html[dir="rtl"] .tours .item:hover .clicko .icon-wrap::before {
+    transform: scale(1) translate(2px, 0px);
+}
+html[dir="rtl"] .tours .item:hover .clicko .icon-wrap .icon {
+    transform: scale(0.26) translate(-45px, -50px);
+}
+@media (max-width: 768px) {
+    html[dir="rtl"] .tours .item .tour-content {
+        align-items: flex-start;
+    }
+    html[dir="rtl"] .tours .item .tour-price-wrap {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+
+/* ======= Services  ======= */
+html[dir="rtl"] .services {
+    text-align: right;
+}
+html[dir="rtl"] .services .item:hover .arrow {
+    top: 0;
+    left: 0;
+    right: auto;
+    border-radius: 20px 0 50px 0;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid var(--clr-primary);
+    border-right: 1px solid var(--clr-primary);
+    border-left: 1px solid transparent;
+}
+html[dir="rtl"] .services .item .arrow {
+    right: auto;
+    left: 30px;
+}
+html[dir="rtl"] .services .item .arrow.fa-arrow-up-right::before {
+    content: "\f060"; /* FontAwesome fa-arrow-up-left */
+}
+html[dir="rtl"] .services .rotate-circle {
+    animation-name: rotateCircleReverse;
+}
+html[dir="rtl"] .services .rotate-circle text {
+    letter-spacing: 55px;
+    font-size: 55px;
+}
+@keyframes rotateCircleReverse {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* ======= Scrolling  ======= */
+html[dir="rtl"] .scrolling.scrolling-ticker .wrapper .content {
+    animation: scrollRTL 200s linear infinite;
+}
+html[dir="rtl"] .scrolling.scrolling-ticker .wrapper .content span {
+    line-height: 1.5em;
+}
+html[dir="rtl"] .scrolling.scrolling-ticker .wrapper .content span i {
+    margin-left: 30px;
+    margin-right: 0;
+}
+html[dir="rtl"] .scrolling.scrolling-ticker .wrapper .content span img {
+    margin-left: 30px;
+    margin-right: 0;
+}
+@keyframes scrollRTL {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(100% + var(--gap)));
+    }
+}
+@media only screen and (max-width: 991px) {
+    html[dir="rtl"] .scrolling.scrolling-ticker .wrapper .content span img {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 767px) {
+    html[dir="rtl"] .scrolling.scrolling-ticker .wrapper .content span img {
+        margin-left: 15px;
+        margin-right: 0;
+    }
+}
+
+
+/* ======= Testimonials 2  ======= */
+html[dir="rtl"] .testimonials2 {
+    text-align: right;
+}
+html[dir="rtl"] .testimonials2 .item {
+    margin-right: 0px;
+    margin-left: 15px;
+    float: right;
+}
+html[dir="rtl"] .testimonials2 .item:last-of-type {
+    margin-left: 0px;
+}
+html[dir="rtl"] .testimonials2 .item .cont {
+    align-items: flex-start;
+}
+html[dir="rtl"] .testimonials2 .item.active .img {
+    border-radius: 0 4px 4px 0;
+}
+html[dir="rtl"] .testimonials2 .item.active .cont {
+    border-radius: 4px 0 0 4px;
+}
+html[dir="rtl"] .testimonials2 .item .cont .info {
+    text-align: right;
+}
+html[dir="rtl"] .testimonials2 .item .cont .info .author-img {
+    float: right;
+}
+html[dir="rtl"] .testimonials2 .item .cont .info .wrapp {
+    margin-right: 60px;
+    margin-left: 0;
+}
+html[dir="rtl"] .testimonials2 .item .cont .info span {
+    margin-left: 5px;
+    margin-right: 0;
+}
+html[dir="rtl"] .testimonials2 .item .cont .rate {
+    float: left;
+}
+html[dir="rtl"] .testimonials2 .item .cont .traveller ul {
+    padding-right: 0px;
+}
+html[dir="rtl"] .testimonials2 .item .cont .traveller ul li {
+    margin-right: -20px;
+    margin-left: 0;
+}
+html[dir="rtl"] .testimonials2 .item .cont .traveller ul li:first-child {
+    margin-right: 0;
+}
+@media (max-width: 1199px) {
+    html[dir="rtl"] .testimonials2 .item .cont {
+        right: 0 !important;
+        left: auto !important;
+    }
+}
+
+
+/* ======= FAQS  ======= */
+html[dir="rtl"] .float-overlap {
+    left: -120px;
+    right: auto;
+}
+html[dir="rtl"] .accordion-box .block .acc-btn {
+    padding: 20px 30px 10px 100px;
+    text-align: right;
+}
+html[dir="rtl"] .accordion-box .block .acc-btn span {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+html[dir="rtl"] .accordion-box .block .content {
+    padding: 0 45px 25px 120px;
+    text-align: right;
+}
+html[dir="rtl"] .accordion-box .block .content i {
+    left: -40px;
+    right: auto;
+    -webkit-transform: rotate(35deg) translateY(-50%);
+    transform: rotate(35deg) translateY(-50%);
+}
+html[dir="rtl"] .bottom-fade {
+    float: right;
+    border-radius: 20px 20px 20px 0;
+}
+@media screen and (max-width: 991px) {
+    html[dir="rtl"] .float-overlap {
+        left: 0px;
+    }
+}
+
+
+/* ======= Blog  ======= */
+html[dir="rtl"] .blog-home {
+    text-align: right;
+}
+html[dir="rtl"] .blog-home .item .info span i {
+    padding-right: 0;
+    padding-left: 5px;
+}
+html[dir="rtl"] .blog-home .item .arrow {
+    display: flex;
+    justify-content: flex-start;
+}
+html[dir="rtl"] .blog-home .item .arrow a i {
+    transform: scaleX(-1);
+}
+
+/* ======= Blog Sidebar ======= */
+html[dir="rtl"] .blog-sidebar .widget ul li i {
+    margin-right: 0;
+    margin-left: 12px;
+}
+html[dir="rtl"] .blog-sidebar .widget .recent .thum {
+    float: right;
+}
+html[dir="rtl"] .blog-sidebar .search form button {
+    right: auto;
+    left: 5px;
+}
+html[dir="rtl"] .blog-sidebar .tags li {
+    float: right;
+}
+html[dir="rtl"] .blog-sidebar .widget-title h6 {
+    text-align: right;
+}
+
+
+/* ======= Team  ======= */
+html[dir="rtl"] .team {
+    text-align: right;
+}
+html[dir="rtl"] .team .item .wrapper .img {
+    border-radius: 20px 20px 20px 0;
+}
+html[dir="rtl"] .team .item .text {
+    padding: 20px 15px 0 0;
+}
+html[dir="rtl"] .team .item .wrapper .icon {
+    right: auto;
+    left: -6px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 50%;
+}
+html[dir="rtl"] .team .item .wrapper .icon::before {
+    bottom: 6px;
+    left: auto;
+    right: -20px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    box-shadow: -6px 6px 0 6px var(--clr-bg-light);
+}
+html[dir="rtl"] .team .item .wrapper .icon::after {
+    top: -20px;
+    right: auto;
+    left: 6px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 20px;
+    box-shadow: -6px 6px 0 6px var(--clr-bg-light);
+}
+html[dir="rtl"] .team .item .wrapper .icon .arrow .hover-icon {
+    transform: translate(20px, 20px);
+}
+html[dir="rtl"] .team .item:hover .wrapper .icon .arrow .default-icon {
+    transform: translate(-10px, -10px);
+}
+html[dir="rtl"] .team .item:hover .wrapper .icon .arrow .hover-icon {
+    transform: translate(0, 0);
+}
+html[dir="rtl"] .team .item .wrapper .icon .arrow .hover-icon::before {
+    content: "\e62a"; 
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+
+/* ======= Footer  ======= */
+html[dir="rtl"] .footer {
+    text-align: right;
+}
+html[dir="rtl"] .footer .subscribe .newsletter input {
+    padding: 0 30px 0 90px; 
+}
+html[dir="rtl"] .footer .subscribe .newsletter button {
+    right: auto;
+    left: 7px;
+}
+html[dir="rtl"] .footer .insta .item .img:first-of-type {
+    border-radius: 0 20px 20px 0;
+}
+html[dir="rtl"] .footer .insta .item .img:last-of-type {
+    border-radius: 20px 0 0 20px;
+}
+html[dir="rtl"] .footer .insta .item .img i {
+    right: auto;
+    left: 15px;
+}
+html[dir="rtl"] .footer .bottom .social-icons.text-end {
+    text-align: left !important;
+}
+html[dir="rtl"] .footer .bottom .social-icons li {
+    margin-right: 0;
+    margin-left: 10px;
+}
+@media screen and (max-width: 991px) {
+    html[dir="rtl"] .footer .bottom .social-icons.text-end {
+        text-align: center !important;
+    }
+}
+
+
+/* ======= Destination ======= */
+html[dir="rtl"] .destination .item .cont .link {
+    margin-left: 0;
+    margin-right: auto;
+}
+html[dir="rtl"] .destination .item .cont .link i {
+    right: auto;
+    left: 0;
+}
+html[dir="rtl"] .destination .item:hover .cont .link i {
+    font-size: 18px;
+}
+html[dir="rtl"] .destination .item .cont .wrap .overlay {
+    left: auto;
+    right: 0;
+}
+
+
+/* ======= Services ======= */
+html[dir="rtl"] .services .item {
+    text-align: center;
+}
+html[dir="rtl"] .services .item .arrow {
+    right: auto;
+    left: 30px;
+}
+html[dir="rtl"] .services .item:hover .arrow {
+    top: 0;
+    right: auto;
+    left: 0; 
+    border-radius: 20px 0 50px 0;
+    border-right: 1px solid var(--clr-primary);
+    border-left: 1px solid transparent;
+}
+
+
+/* ======= Section Info ======= */
+html[dir="rtl"] .section-info .icons {
+    margin-right: 0;
+    margin-left: 10px;
+}
+html[dir="rtl"] .section-info .tag {
+    margin-right: 0;
+    margin-left: 15px;
+}
+html[dir="rtl"] .section-info .desc {
+    text-align: right;
+}
+
+
+/* ======= Header Post ======= */
+html[dir="rtl"] header .post .author {
+    margin-right: 0;
+    margin-left: 20px;
+}
+html[dir="rtl"] header .post .date-comment {
+    margin-right: 0;
+    margin-left: 20px;
+}
+html[dir="rtl"] header .post .date-comment i {
+    margin-right: 0;
+    margin-left: 5px;
+}
+html[dir="rtl"] header .post .date-comment:last-of-type {
+    margin-left: 0px;
+}
+html[dir="rtl"] .author .avatar {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/* ======= Contact ======= */
+html[dir="rtl"] .contact .text-left {
+    text-align: right !important;
+}
+html[dir="rtl"] .form-group .form-icon {
+    left: auto;
+    right: 25px;
+}
+html[dir="rtl"] .form-group input,
+html[dir="rtl"] .form-group select,
+html[dir="rtl"] .form-group textarea,
+html[dir="rtl"] .footer .top .item .newsletter input {
+    padding-left: 15px !important;
+    padding-right: 55px !important;
+}
+html[dir="rtl"] blockquote:before {
+    right: auto;
+    left: 45px;
+}
+html[dir="rtl"] blockquote cite {
+    padding-left: 0;
+    padding-right: 40px;
+}
+html[dir="rtl"] blockquote cite:before {
+    left: auto;
+    right: 0;
+}
+html[dir="rtl"] .first-letter {
+    float: right;
+    margin: 0 0 0 25px;
+}
+
+/* ======= Team Details ======= */
+html[dir="rtl"] .team-details .wrap .social-icon a {
+    margin-right: 0;
+    margin-left: 2px;
+}
+html[dir="rtl"] .team-details .simpl-bord .nav-item {
+    margin-right: 0;
+    margin-left: 50px;
+}
+html[dir="rtl"] .team-details .simpl-bord .nav-item:last-of-type {
+    margin-left: 0;
+}
+html[dir="rtl"] .team-details .page-list-icon {
+    float: right;
+}
+html[dir="rtl"] .team-details .page-list-text {
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+
+/* ======= Testimonials 1 ======= */
+html[dir="rtl"] .testimonials1 .item .review-title .quote-img {
+    left: auto;
+    right: -15px;
+}
+html[dir="rtl"] .testimonials1 .item .review-title .quote-icon {
+    left: auto;
+    right: -20px;
+}
+html[dir="rtl"] .testimonials1 .item:hover .review-title .quote-icon {
+    transform: rotateY(-180deg);
+}
+html[dir="rtl"] .testimonials1 .item:hover .img-inner > img {
+    transform: rotateZ(-5deg);
+}
+html[dir="rtl"] .testimonials1 .testimonials1-container:after {
+    right: auto;
+    left: 0;
+}
+
+/* ======= Tour Details ======= */
+html[dir="rtl"] .tour-details .cont .item .title {
+    padding-left: 0;
+    padding-right: 12px;
+    text-align: right;
+}
+html[dir="rtl"] .tour-details .cont .item .value {
+    text-align: left;
+}
+html[dir="rtl"] .page-list-icon {
+    margin-left: 15px;
+}
+
+
+/* ======= Service Details ======= */
+html[dir="rtl"] .service-details .list li {
+    display: flex;
+}
+html[dir="rtl"] .service-details .list-icon {
+    float: right;
+}
+html[dir="rtl"] .service-details .list-text {
+    padding-right: 20px;
+    padding-left: 0;
+}
+html[dir="rtl"] .service-details blockquote {
+    border-left: none;
+    border-right: 4px solid var(--clr-primary);
+    padding-left: 0;
+    padding-right: 20px;
+    text-align: right;
+}
+html[dir="rtl"] .service-details blockquote cite {
+    display: block;
+}
+
+
+/* ======= 404 Page ======= */
+html[dir="rtl"] .notfound form input {
+    padding: 15px 20px 15px 50px;
+    text-align: right;
+    direction: rtl;
+}
+html[dir="rtl"] .notfound form button {
+    left: 5px;
+    right: auto;
+}
