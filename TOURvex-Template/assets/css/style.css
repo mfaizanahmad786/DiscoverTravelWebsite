@@ -50,6 +50,7 @@
 :root {
     /* Text Colors */
     --clr-primary: #2095AE;
+    --clr-secondary: #2D9B4A;
     --clr-heading: #0f2454;
     --clr-body: #5e6282;
     --clr-white: #ffffff;
@@ -58,6 +59,7 @@
     --clr-bg-light: #f4f5f8;
     --clr-bg-white: #ffffff;
     --clr-bg-turkuaz: #2095AE;
+    --clr-bg-green: #2D9B4A;
     /* Typography */
     --font-primary: "Barlow Semi Condensed", sans-serif;
     --font-secondary: "Barlow Condensed", sans-serif;
@@ -5548,4 +5550,75 @@ body.mfp-zoom-out-cur {
 }
 [data-overlay-dark="10"]:before {
     opacity: 1;
+}
+
+/* ======= Green Theme Accents ======= */
+/* Add green to section subtitles in specific sections */
+.about2 .section-subtitle,
+.tours .section-subtitle {
+    color: var(--clr-secondary) !important;
+}
+
+/* Green accent buttons */
+.butn-arrow.green-btn {
+    background: var(--clr-secondary);
+}
+
+.butn-arrow.green-btn:hover {
+    background: #258a3e;
+}
+
+/* Newsletter button green */
+.footer .subscribe .newsletter button {
+    background: var(--clr-secondary) !important;
+}
+
+.footer .subscribe .newsletter:hover button {
+    background: #258a3e !important;
+}
+
+/* Green icons for services */
+.services .item:nth-child(2) .icon i,
+.services .item:nth-child(4) .icon i {
+    color: var(--clr-secondary) !important;
+}
+
+/* Green hover effect for service items */
+.services .item:hover {
+    border-color: var(--clr-secondary);
+}
+
+/* Tour price green accent */
+.tours .tour-rating {
+    background: var(--clr-secondary);
+}
+
+/* Add green to some list icons */
+.listo li:nth-child(even) i {
+    color: var(--clr-secondary) !important;
+}
+
+/* Green accent on hover for tour items */
+.tours .item:hover .clicko span {
+    border-color: var(--clr-secondary);
+}
+
+/* Blog arrow green */
+.blog-home .item:hover .arrow a {
+    background: var(--clr-secondary);
+}
+
+/* Testimonial active green accent */
+.testimonials2 .item.active {
+    border-top: 3px solid var(--clr-secondary);
+}
+
+/* FAQ accordion green accent */
+.accordion .acc-btn.active {
+    color: var(--clr-secondary) !important;
+}
+
+/* Social icons green hover */
+.social-icons li a:hover {
+    background: var(--clr-secondary) !important;
 }
