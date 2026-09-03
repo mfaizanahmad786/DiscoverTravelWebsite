@@ -5549,3 +5549,14 @@ body.mfp-zoom-out-cur {
 [data-overlay-dark="10"]:before {
     opacity: 1;
 }
+
+/* Fix destination card heights */
+.destination .item {
+    height: 100%;
+}
+
+.destination .item img {
+    height: 450px;
+    object-fit: cover;
+    width: 100%;
+}
